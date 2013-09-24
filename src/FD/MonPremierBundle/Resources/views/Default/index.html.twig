@@ -1,0 +1,17 @@
+{% extends 'FDMonPremierBundle::layout.html.twig' %}
+{% block title %}
+	{{ parent() }}
+	- Tp2 SLAM4
+{% endblock %}
+
+
+{% block body %}
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	{% include "FDMonPremierBundle::nomfichier.html.twig" with {'var1':'Symphony','var2':'2.3.4'}%}
+	<br> 
+	{{block('title')}}<br>
+	<br>
+	<h4>Le but est de bien gerer l'architecture global de ce framework.</h4></p>
+{% endblock %}
+
+

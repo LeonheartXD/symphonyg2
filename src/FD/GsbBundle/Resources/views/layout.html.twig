@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenu(e){% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+		<link rel="stylesheet" href="{{ asset('bundles/fdGsb/css/style.css') }}"
+		type="text/css" media="all" />
+		
+		
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block head %} 
+        <img src="{{ asset('bundles/fdGsb/images/logo.jpg') }}" alt="logo" align=left width="160" height="120" />
+        <br>
+        <h1>Le laboratoire pharmaceutique GSB : Galaxy-Swiss Bourdin</h1>
+        <br>
+        {% endblock %}
+	    
+    </header>
+    <body>
+        
+        <div id=Menu>{% block body %}
+            <br>    
+            <div id=center> Le Menu :</div> <br>
+            Présentation<br>
+                     {% endblock %}
+        </div>
+        <div id=bodyPresentation>{% block body1 %}Index site{% endblock %}</div>
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+<footer>
+{% block footer %}Copyright © 2013 Danel Florian - Reproduction interdite sans accord du webmaster{% endblock %}
+</footer>
+</html>

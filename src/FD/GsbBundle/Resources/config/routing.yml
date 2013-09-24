@@ -1,0 +1,7 @@
+fd_gsb_homepage:
+    pattern:  /
+    defaults: { _controller: FDGsbBundle:Default:index }
+
+fd_gsb_presentationpage:
+    pattern:  /presentation
+    defaults: { _controller: FDGsbBundle:Default:presentation }

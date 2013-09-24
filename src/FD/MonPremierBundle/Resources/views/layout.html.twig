@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenu(e){% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+		<link rel="stylesheet" href="{{ asset ('bundles/FDMonPremier/css/style.css')}}"
+		type="text/css" media="all" />
+		<img src="{{ asset('bundles/FDMonPremier/images/logo.gif') }}" alt="logo"
+		width="" height="" />
+		
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
+	    
+	</head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

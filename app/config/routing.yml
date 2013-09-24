@@ -1,0 +1,8 @@
+fd_gsb:
+    resource: "@FDGsbBundle/Resources/config/routing.yml"
+    prefix:   /Gsb
+
+fd_mon_premier:
+    resource: "@FDMonPremierBundle/Resources/config/routing.yml"
+    prefix:   /FD
+
